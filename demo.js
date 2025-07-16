@@ -2,7 +2,7 @@ const prompt = require("prompt-sync")();
 
 var marks = prompt("Enter you mark:")
 let mark = parseInt(marks)
-if (mark==100 & mark>85){
+if (mark>=85 & mark<=100){
     console.log("A grade")
 }
 else if(mark<=85 & mark>=60)
@@ -16,3 +16,4 @@ else{
     console.log("fail")
 }
 console.log(mark);
+ 
